@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sharif's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav id="navbar">
+  <h2 class="logo">Sharif's Portfolio</h2>
+  
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  <ul class="menu">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#photo-gallery">My Photo-Gallery</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#extra">More</a></li>
+  </ul>
+
+  <button id="darkModeToggle">🌙</button>
+</nav>
+
+
+<!--
+ Hero Section
+  <section id="hero">
+    <img src="profile.jpg" alt="My Photo" class="profile-pic" />
+    <h1>Hello, I'm <span>SHARIFUL ISLAM</span></h1>
+    <p><b>A Full Stack Web Developer.</b>
+I build clean, responsive, and interactive websites</p>
+  </section>
+
+-->
+
+<!-- Hero Section -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-left">
+      <img src="profile.jpg" alt="My Photo" class="profile-pic" onclick="openModal(this)" />
+      <h1>Hello, I'm <span>SHARIFUL ISLAM</span></h1>
+      <p><b>A Full Stack Web Developer.</b><br>
+      I build clean, responsive, and interactive websites</p>
+    </div>
+    <div class="hero-right">
+      <div class="highlight-box">
+        <h2>Let's build something amazing</h2>
+        <p>I specialize in creating high-performance web applications using modern technologies like React, Node.js, and MongoDB.</p>
+        <a href="https://sharif1023.github.io/My-Protfolio/" class="hero-button">View My Work</a>
+      </div>
+    </div>
+  </div>
+  <a href="Marwa's CV.pdf" download class="hero-button">Download CV</a>
+</section>
+
+
+<!-- About Me Section 
+
+<section id="about">
+  <h2><i class="fas fa-user"></i> About Me</h2>
+  <p>
+    Hi! I’m <strong>Shariful Islam</strong>, a passionate <strong>Full Stack Web Developer</strong> with a
+     solid grasp of modern web technologies and a drive to create impactful digital experiences.
+  </p>
+
+  <p><strong>Education:</strong><br>
+    I’m currently pursuing a BSc in Computer Science & Engineering at <strong>Premier University</strong>.
+     I've developed numerous projects that showcase both my academic learning and hands-on skills.
+  </p>
+
+  <p><strong>Passion:</strong><br>
+    I love creating responsive, user-focused websites, solving real-world problems through code,
+     and continuously learning new technologies and frameworks. Creativity and functionality go hand in hand in my development style.
+  </p>
+
+  <p><strong>Goals:</strong><br>
+    My goal is to become a top-level developer, lead impactful projects, contribute to open-source,
+     and eventually build my own tech venture. I strive to stay ahead with current trends and tech innovations.
+  </p>
+  <div class="timeline">
+  <div class="timeline-item">
+    <h4>2022 - Present</h4>
+    <p><strong>Premier University</strong> - BSc in Computer Science & Engineering</p>
+  </div>
+  <div class="timeline-item">
+    <h4>2021</h4>
+    <p>Started learning Web Development & built my first portfolio.</p>
+  </div>
+</div>
+
+</section>
+
+ Skills Section 
+<section id="skills">
+  <h2><i class="fas fa-code"></i> Skills</h2>
+  <ul>
+    <li><i class="fab fa-html5"></i><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js, Tailwind CSS</li>
+    <li><i class="fas fa-server"></i><strong>Backend:</strong> Node.js, Express.js, PHP, Firebase, MySQL</li>
+    <li><i class="fas fa-tools"></i><strong>Tools & Platforms:</strong> Git, GitHub, VS Code, Firebase Auth</li>
+    <li><i class="fas fa-laptop-code"></i><strong>Other Strengths:</strong> Responsive Design, Dark Mode, UI/UX Best Practices</li>
+  </ul>
+</section>
+
+-->
+
+<div class="row-section">
+  <!-- About Me Section -->
+  <section id="about" class="info-card about-card">
+    <h2><i class="fas fa-user"></i> About Me</h2>
+    <p>
+      Hi! I’m <strong>Shariful Islam</strong>, a passionate <strong>Full Stack Web Developer</strong> with 
+      a solid grasp of modern web technologies and a drive to create impactful digital experiences.
+    </p>
+    <p><strong>Education:</strong><br>
+      I’m currently pursuing a BSc in Computer Science & Engineering at <strong>Premier University</strong>
+       I've developed numerous projects that showcase both my academic learning and hands-on skills.
+    </p>
+    <p><strong>Passion:</strong><br>
+      I love creating responsive, user-focused websites, solving real-world problems through code,
+     and continuously learning new technologies and frameworks. Creativity and functionality go hand in hand in my development style.
+    </p>
+    <p><strong>Goals:</strong><br>
+      My goal is to become a top-level developer, lead impactful projects, contribute to open-source,
+     and eventually build my own tech venture. I strive to stay ahead with current trends and tech innovations.
+    </p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>2022 - Present</h4>
+        <p><strong>Premier University</strong> - BSc in CSE</p>
+      </div>
+      <div class="timeline-item">
+        <h4>2021</h4>
+        <p>Started learning Web Development & built my first portfolio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="info-card skills-card">
+    <h2><i class="fas fa-code"></i> Skills</h2>
+    <ul>
+      <li><i class="fab fa-html5 icon frontend"></i> <strong class="category frontend">Frontend:</strong> HTML5, CSS3, JavaScript, React.js, Tailwind CSS</li>
+      <li><i class="fas fa-server icon backend"></i> <strong class="category backend">Backend:</strong> Node.js, Express.js, PHP, Firebase, MySQL</li>
+      <li><i class="fas fa-tools icon tools"></i> <strong class="category tools">Tools:</strong> Git, GitHub, VS Code, Firebase Auth</li>
+      <li><i class="fas fa-laptop-code icon other"></i> <strong class="category other">Other:</strong> Responsive Design, Dark Mode, UI/UX Best Practices</li>
+    </ul>
+  </section>
+</div>
+
+
+<!-- Photo Gallery Section -->
+<section id="photo-gallery">
+  <h2>My Photo-Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="sagor.jpg" alt="Me in event" onclick="openModal(this)">
+      <h4>This place is Cox's Bazar.</h4>
+      <h5>This picture was captured in Cox's Bazar.</h5>
+      <p>Cox's Bazar is a coastal town in southeastern Bangladesh, known for the world’s longest natural sandy beach.
+         It's a popular tourist spot,famous for its scenic beauty, blue waters, and nearby attractions like Himchari, 
+         Inani Beach, and Ramu.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="jorna.jpg" alt="Me with team" onclick="openModal(this)">
+      <h4>This place is MIRSHORAI.</h4>
+      <h5>This picture was captured in MOHAMAYA LAKE.</h5>
+      <p>Mohamaya Lake is an artificial lake in Mirsarai, Chattogram, created for irrigation.
+         It’s now a popular eco-tourism spot known for kayaking, boating, 
+        camping, and beautiful natural surroundings.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="kaptai.jpg" alt="Study session" onclick="openModal(this)">
+      <h4>This place is KAPTAI.</h4>
+      <h5>This picture was captured in KAPTAI LAKE.</h5>
+      <p>Kaptai Lake is the largest man-made lake in Bangladesh, 
+        located in Rangamati. Created by damming the Karnaphuli River, it’s a popular spot for boating, 
+        fishing, and nature trips. The lake is surrounded by hills and forests, making it a beautiful destination in 
+        the Chittagong Hill Tracts.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="mirinja.jpg" alt="Study session" onclick="openModal(this)">
+      <h4>This place is BANDARBAN.</h4>
+      <h5>This picture was captured in MIRINJA.</h5>
+      <p>Mirinja Valley is a scenic hilltop in Bandarban, offering stunning views of the Bay of Bengal,
+         rivers, and surrounding hills. It’s known for sunsets and peaceful nature.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="trail.jpg" alt="Study session" onclick="openModal(this)">
+      <h4>This place is SITAKUNDO.</h4>
+      <h5>This picture was captured in MIRSHORAI.</h5>
+      <p>Sitakunda Trail is a popular hiking spot in southeastern Bangladesh, 
+        known for waterfalls, forest paths, and scenic views from Chandranath Hill.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="bandarban.jpg" alt="Study session" onclick="openModal(this)">
+      <h4>This place is BANDARBAN.</h4>
+      <h5>This picture was captured in NILACHOL.</h5>
+      <p>Nilachal is a hilltop viewpoint near Bandarban, known for its stunning views, sunsets, and clouds.
+         It’s a favorite spot for tourists seeking natural beauty.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modal for Image Preview -->
+<div id="image-modal" class="modal" onclick="closeModal(event)">
+  <span class="close-btn" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+
+<!-- Projects Section -->
+ <section id="projects">
+  <h2>My Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="4.jpg" alt="Project 1" onclick="openModal(this)">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio built with HTML, CSS, and JavaScript.</p>
+      <a href="https://sharif1023.github.io/My-Protfolio/" class="project-link">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="2.jpg" alt="Project 2" onclick="openModal(this)">
+      <h3>Blog Platform</h3>
+      <p>A simple blog site powered by Firebase and React.</p>
+      <a href="https://sharif1023.github.io/My-Protfolio/" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <div class="project-card">
+      <img src="3.jpg" alt="Project 3" onclick="openModal(this)">
+      <h3>Weather App</h3>
+      <p>Real-time weather updates using a public API.</p>
+      <a href="https://sharif1023.github.io/My-Protfolio/" target="_blank" class="project-link">View Project</a>
+    </div>
+
+    <!-- Add more .project-card divs as needed -->
+  </div>
+  <!-- Modal for Image Preview -->
+<div id="image-modal" class="modal" onclick="closeModal(event)">
+  <span class="close-btn" onclick="closeModal(event)">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+</section>
+
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="extra">
+  <h2>Connect me with SOCIAL</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/share/14yneyKJkNx/?mibextid=wwXIfr" target="_blank">
+      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/sharunduu.fly?igsh=czM1enIwaW1rZnc1&utm_source=ig_contact_invite" target="_blank">
+      <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" />
+    </a>
+    <a href="https://youtube.com/@sharifislam2035?si=qO1I8e6z3jqIBvLW" target="_blank">
+      <img src="https://img.icons8.com/color/48/youtube-play.png" alt="YouTube" />
+    </a>
+  </div>
+</section>
+
+  <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8801316785389" class="whatsapp-float" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Chat on WhatsApp" />
+</a>
+
+<footer>
+  <p>&copy; 2025 Shariful Islam. All rights reserved.</p>
+</footer>
+
+<button onclick="scrollToTop()" id="topBtn">↑</button>
+
+<!-- Firebase Script -->
+<script type="module" src="firebase-contact.js"></script>
+</body>
+</html>
